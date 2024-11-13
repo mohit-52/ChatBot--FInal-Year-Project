@@ -1,3 +1,4 @@
+import 'package:ai_assistant/screen/feature/ChatScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -39,7 +40,7 @@ extension MyHomeType on HomeType {
 
   //for navigation
   VoidCallback get onTap => switch (this) {
-        HomeType.aiChatBot => () => Get.to(() => const ChatBotFeature()),
+        HomeType.aiChatBot => () => Get.to(() => const ChatScreen()),
         HomeType.aiImage => () => Get.to(() => const ImageFeature()),
         HomeType.aiTranslator => () => Get.to(() => const TranslatorFeature()),
       };
